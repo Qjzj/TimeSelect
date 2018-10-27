@@ -1,0 +1,85 @@
+[data-off="true"] {
+    display: none;
+}
+html,body {
+    height: 100%;
+    box-sizing: border-box;
+}
+.Module-SelectLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    overflow: hidden;
+    z-index: 999;
+}
+.Module-SelectLayer .Bottom {
+    bottom: 0;
+}
+.Module-SelectLayer .Container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*min-height: 75px;*/
+    height: 40%;
+    max-height: 70%;
+    background: #fff;
+}
+.Module-SelectLayer .Container .M_TopBar {
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.Module-SelectLayer .Container .M_TopBar .Title {
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+}
+.Module-SelectLayer .Container .M_TopBar .Title span{
+    float: left;
+    height: 39px;
+    font-weight: 400;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+}
+.Module-SelectLayer .Container .M_TopBar .Title span:last-child {
+    border-bottom-color: #4fa7ff;
+}
+.Module-SelectLayer .Container .M_TopBar .ButtonSave {
+    float: right;
+    font-size: 13px;
+    color: #4fa7ff;
+}
+.Module-SelectLayer .Container .ContentBox {
+    height: 100%;
+    /*max-height: 400px;*/
+    background: #f3f3f3;
+    overflow-y: auto;
+}
+.Module-SelectLayer .Container .Content {
+    padding-bottom: 45px;
+    background: #f3f3f3;
+    overflow-y: auto;
+}
+.Module-SelectLayer .Container .Content .Item {
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+.Module-SelectLayer .Container .Content .Selected {
+    background: #4fa7ff;
+    color: #fff;
+}
